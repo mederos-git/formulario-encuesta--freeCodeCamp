@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Encuesta sobre Programación</title>
+  </head>
+
+  <body>
+    <h1 id="title">Encuesta sobre Programación</h1>
+    <p id="description">
+      Tu opinión es importante. Completa esta encuesta para ayudar a entender la
+      perspectiva sobre el aprendizaje de programación.
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Introduce tu nombre"
+        required
+      />
+
+      <label id="email-label" for="email">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Introduce tu correo electrónico"
+        required
+      />
+
+      <label id="number-label" for="number">Edad:</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        placeholder="Introduce tu edad"
+        min="10"
+        max="100"
+        required
+      />
+
+      <label for="dropdown">
+        ¿Cuál es tu nivel de experiencia en programación?
+      </label>
+      <select id="dropdown" name="experience">
+        <option value="beginner">Principiante</option>
+        <option value="intermediate">Intermedio</option>
+        <option value="advanced">Avanzado</option>
+      </select>
+
+      <fieldset>
+        <legend>¿Qué lenguajes de programación conoces?</legend>
+        <label>
+          <input type="radio" name="language" value="html" />
+          HTML
+        </label>
+        <label>
+          <input type="radio" name="language" value="css" />
+          CSS
+        </label>
+        <label>
+          <input type="radio" name="language" value="javascript" />
+          JavaScript
+        </label>
+        <label>
+          <input type="radio" name="language" value="python" />
+          Python
+        </label>
+        <label>
+          <input type="radio" name="language" value="java" />
+          Java
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="language" value="other" />
+          Otros
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué tecnologías utilizas?</legend>
+        <label>
+          <input type="checkbox" name="technology" value="frontend" />
+          Frontend
+        </label>
+        <label>
+          <input type="checkbox" name="technology" value="backend" />
+          Backend
+        </label>
+        <label>
+          <input type="checkbox" name="technology" value="devops" />
+          DevOps
+        </label>
+      </fieldset>
+
+      <label for="comments">Comentarios Adicionales:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Escribe tus comentarios aquí..."
+      ></textarea>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>
